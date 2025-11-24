@@ -396,5 +396,5 @@ For issues and questions:
 
 ---
 
-**Built with ❤️ for the sensor fusion community**
+**Built with ❤️ from me**
 
