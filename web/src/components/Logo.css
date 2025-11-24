@@ -1,0 +1,88 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.logo-svg {
+  flex-shrink: 0;
+  animation: rotate 20s linear infinite;
+}
+
+.logo-text {
+  background: linear-gradient(135deg, #00d4ff 0%, #4a9eff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: inherit;
+}
+
+.logo-small .logo-svg {
+  width: 32px;
+  height: 32px;
+}
+
+.logo-small .logo-text {
+  font-size: 1.2rem;
+}
+
+.logo-medium .logo-svg {
+  width: 48px;
+  height: 48px;
+}
+
+.logo-medium .logo-text {
+  font-size: 1.8rem;
+}
+
+.logo-large .logo-svg {
+  width: 64px;
+  height: 64px;
+}
+
+.logo-large .logo-text {
+  font-size: 2.5rem;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.particle {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.particle-1 {
+  animation-delay: 0s;
+}
+
+.particle-2 {
+  animation-delay: 0.5s;
+}
+
+.particle-3 {
+  animation-delay: 1s;
+}
+
+.particle-4 {
+  animation-delay: 1.5s;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+

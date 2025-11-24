@@ -1,0 +1,138 @@
+.file-upload {
+  width: 100%;
+}
+
+.file-upload h2 {
+  margin-bottom: 1.5rem;
+  color: var(--brand-text-primary);
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.file-upload h2::before {
+  content: '';
+  width: 4px;
+  height: 24px;
+  background: linear-gradient(135deg, var(--brand-accent), var(--brand-accent-secondary));
+  border-radius: 2px;
+}
+
+.upload-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.upload-controls input[type="file"] {
+  padding: 1rem;
+  border: 2px dashed var(--brand-border);
+  border-radius: 12px;
+  cursor: pointer;
+  background: var(--brand-dark);
+  color: var(--brand-text-secondary);
+  transition: all 0.3s;
+  font-size: 0.95rem;
+}
+
+.upload-controls input[type="file"]:hover {
+  border-color: var(--brand-accent);
+  background: rgba(0, 212, 255, 0.05);
+}
+
+.upload-controls input[type="file"]::file-selector-button {
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, var(--brand-accent), var(--brand-accent-secondary));
+  color: var(--brand-text-primary);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-right: 1rem;
+  transition: transform 0.2s;
+}
+
+.upload-controls input[type="file"]::file-selector-button:hover {
+  transform: scale(1.05);
+}
+
+.alpha-control {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.alpha-control label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--brand-text-secondary);
+  font-size: 0.95rem;
+}
+
+.alpha-control input {
+  padding: 0.75rem;
+  border: 1px solid var(--brand-border);
+  border-radius: 8px;
+  width: 120px;
+  background: var(--brand-dark);
+  color: var(--brand-text-primary);
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.alpha-control input:focus {
+  outline: none;
+  border-color: var(--brand-accent);
+  box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.1);
+}
+
+.upload-button {
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, var(--brand-accent) 0%, var(--brand-accent-secondary) 100%);
+  color: var(--brand-text-primary);
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+  letter-spacing: 0.02em;
+}
+
+.upload-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 212, 255, 0.4);
+}
+
+.upload-button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.upload-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.file-info {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  background: rgba(0, 212, 255, 0.1);
+  border-left: 3px solid var(--brand-accent);
+  border-radius: 8px;
+  color: var(--brand-text-secondary);
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.file-info::before {
+  content: '📄';
+  font-size: 1.2rem;
+}
+
